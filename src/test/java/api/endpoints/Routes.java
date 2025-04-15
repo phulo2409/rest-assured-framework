@@ -27,6 +27,17 @@ public class Routes {
 
         // Here  you will create Pet module URL's
 
+    // Booking Module
+    public static String base_booking_url = "https://restful-booker.herokuapp.com";
+
+    public static String post_booking_url = base_booking_url + "/booking";
+    public static String get_booking_detail_url = base_booking_url + "/booking/{bookingid}";
+    public static String update_booking_url = base_booking_url + "/booking/{bookingid}";
+    public static String delete_booking_url = base_booking_url + "/booking/{bookingid}";
+    public static String login_booking_url = base_booking_url + "/auth";
+
+
+
 
 
 }

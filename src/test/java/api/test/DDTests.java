@@ -6,10 +6,11 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import payload.User;
+import ultilities.DataProviders;
 
 public class DDTests {
 
-    @Test(priority = 1, dataProvider = "Data", dataProviderClass = DataProvider.class)
+    @Test(priority = 1, dataProvider = "Data", dataProviderClass = DataProviders.class)
     public void testPostuser(String userID, String userName, String firstName, String lastName, String userEmail, String password, String phoneNumber){
         User userPayload = new User();
 
